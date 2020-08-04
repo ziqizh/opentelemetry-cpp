@@ -7,7 +7,7 @@ The built-in samplers includes `AlwaysOn` , `AlwaysOff` , `Probability` and `Par
 1. Make sure you are at `examples\simple-sampler`
 2. Run `bazel build :example_simple` to build the program.
 3. The compiled binary will be in the `bazel-bin\` folder under rood directory. 
-4. Run `../../bazel-bin/examples/simple-sampler/example_simple` . It will test AlwaysOn and AlwaysOff sampler.
+4. Run `../../bazel-bin/examples/simple_sampler/example_simple` . It will test AlwaysOn and AlwaysOff sampler.
 
 ## Understanding the example
 
@@ -20,6 +20,7 @@ The samplers are under `sdk` folder. You can include them by adding:
 #include "opentelemetry/sdk/trace/samplers/always_off.h"
 #include "opentelemetry/sdk/trace/samplers/always_on.h"
 #include "opentelemetry/sdk/trace/samplers/parent_or_else.h"
+#include "opentelemetry/sdk/trace/samplers/probability.h"
 ```
 
 ### Constructing a sampler
